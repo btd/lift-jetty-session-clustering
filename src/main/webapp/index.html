@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Home</title>
+  </head>
+  <body class="lift:content_id=main">
+    <div id="main" class="lift:surround?with=default;at=content">
+      <h2>Welcome to your project!</h2>
+      <h2>You processed on instance <span lift="Account.instanceName"></span></h2>
+      <p>
+      	<span class="lift:helloWorld.howdy">
+      	  Welcome to your Lift app at <span id="time">Time goes here</span>
+      	</span>
+      </p>
+       <form lift="Account.login?form=post">
+        <input type='text' name='login'/>
+        <button name='button'></button>
+      </form>
+      <form lift="Account.logSession?form=post">
+        <button name='button'></button>
+      </form>
+    </div>
+
+  </body>
+</html>
+
