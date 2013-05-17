@@ -1,0 +1,3 @@
+This app uses 2 jetty instances and nginx with upstream. To run you need to configure nginx  and start both instances.
+
+First i tried to use lift ContainerVar but in some reason it does not work. Also it make some strange actions, because servlet session require that attribute values should satisfy serialization contracts, but this does not mean that application should serialize itself as ContainerVar do.
